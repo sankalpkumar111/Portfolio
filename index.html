@@ -21,296 +21,430 @@ limitations under the License. -->
     <script type="module" src="script.js"></script>
     <title>Sankalp Kumar | Portfolio</title>
 
-    <link rel="shortcut icon" href="assets/portfolio_281089.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/portfolio_281089.ico"
+      type="image/x-icon"
+    />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SWQBNX0C6F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SWQBNX0C6F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-SWQBNX0C6F');
-</script>
-
-  
+      gtag("config", "G-SWQBNX0C6F");
+    </script>
   </head>
   <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-    <header class="bg-white dark:bg-gray-800 shadow-md dark:shadow-lg">
-      <nav class="container mx-auto p-4 flex justify-between items-center  ">
-        <a
-          href="home.html"
-          class="text-xl font-bold text-gray-800 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400"
-        >
+    <header class="bg-white dark:bg-gray-800 shadow-md dark:shadow-lg fixed top-0 left-0 w-full z-50">
+      <nav class="container mx-auto p-4 flex justify-between items-center">
+        <a href="home.html" class="text-xl font-bold text-gray-800 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400">
           Sankalp Kumar
         </a>
         <ul class="hidden md:flex space-x-8 text-gray-600 dark:text-gray-200">
           <li>
-            <a
-              href="home.html"
-              class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
-              >Home</a
-            >
+            <a href="#home" class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Home</a>
           </li>
           <li>
-            <a
-              href="#about"
-              class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
-              >About</a
-            >
+            <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">About</a>
           </li>
           <li>
-            <a
-              href="#project"
-              class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
-              >Projects</a
-            >
+            <a href="#project" class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Projects</a>
           </li>
           <li>
-            <a
-              href="#contact"
-              class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300"
-              >Contact</a
-            >
+            <a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Contact</a>
           </li>
         </ul>
         <div class="hidden md:block">
-          <a
-            href="media/resume.pdf"
-            class="px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300"
-            download
-          >
+          <a href="media/resume.pdf" class="px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300" download>
             Resume
           </a>
         </div>
-        <button
-          id="mobile-menu-button"
-          class="block md:hidden text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+        <button id="mobile-menu-button" class="block md:hidden text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </nav>
     
-    
-    
-    <!-- Mobile Navigation Menu -->
-    <div id="mobile-menu" class="md:hidden hidden">
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="md:hidden hidden">
         <ul class="p-4 bg-gray-100 dark:bg-gray-800 space-y-4 text-center">
-            <li>
-                <a href="#home" class="block text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Home</a>
-            </li>
-            <li>
-                <a href="#about" class="block text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">About</a>
-            </li>
-            <li>
-                <a href="#project" class="block text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Projects</a>
-            </li>
-            <li>
-                <a href="#contact" class="block text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Contact</a>
-            </li>
-            <li>
-                <a href="media/resume.pdf" class="block px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300">
-                    Resume
-                </a>
-            </li>
+          <li>
+            <a href="#home" class="block text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="block text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">About</a>
+          </li>
+          <li>
+            <a href="#project" class="block text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="block text-gray-600 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Contact</a>
+          </li>
+          <li>
+            <a href="media/resume.pdf" class="block px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300">
+              Resume
+            </a>
+          </li>
         </ul>
-    </div>
-    
+      </div>
     </header>
 
+    
     <main>
-        <section class="bg-gradient-to-r from-gray-800 to-black text-white py-20">
-            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-              <!-- Text Section with Fade-In Animation -->
-              <div class="w-full md:w-1/2 text-center md:text-left ml-5 animate__animated animate__fadeInLeft animate__delay-1s">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">
-                  Hi, I’m Sankalp Kumar,
-                  <br class="hidden md:block" />
-                  a passionate MCA student and
-                  <span id="dynamic-role" class="text-yellow-400"></span>.
-                </h1>
-                <p class="text-xl mb-6">
-                  Specializing in crafting beautiful, responsive websites with
-                  Django, Python, and Flutter.
-                </p>
-                <!-- Button with Bounce Animation -->
-                <a
-                  href="https://github.com/sankalpkumar111"
-                  target="_blank"
-                  class="px-6 py-3 bg-yellow-500 text-gray-900 font-semibold rounded-lg hover:bg-yellow-600 transition duration-300 animate-bounce md:hover:bg-yellow-600"
+      <section class="bg-gradient-to-r from-gray-800 to-black text-white py-20"  id="home">
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center justify-between"
+        >
+          <!-- Text Section with Fade-In Animation -->
+          <div
+            class="w-full md:w-1/2 text-center md:text-left ml-5 animate__animated animate__fadeInLeft animate__delay-1s"
+          >
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+              Hi, I’m Sankalp Kumar,
+              <br class="hidden md:block" />
+              a passionate MCA student and
+              <span id="dynamic-role" class="text-yellow-400"></span>.
+            </h1>
+            <p class="text-xl mb-6">
+              Specializing in crafting beautiful, responsive websites with
+              Django, Python, and Flutter.
+            </p>
+            <!-- Button with Bounce Animation -->
+            <a
+              href="https://github.com/sankalpkumar111"
+              target="_blank"
+              class="px-6 py-3 bg-yellow-500 text-gray-900 font-semibold rounded-lg hover:bg-yellow-600 transition duration-300 animate-bounce md:hover:bg-yellow-600"
+            >
+              See My Work
+            </a>
+          </div>
+          <!-- Profile Picture with Slide-In Animation -->
+          <div
+            class="w-full md:w-1/2 mt-8 md:mt-0 animate__animated animate__fadeInRight animate__delay-2s"
+          >
+            <div class="flex justify-center md:justify-end">
+              <img
+                src="assets/profile_pic.jpg"
+                alt="Profile Picture"
+                class="mx-auto rounded-full shadow-lg w-64 h-64 md:w-80 md:h-80 transition duration-500 ease-in-out transform hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-12"
+        id="about"
+      >
+        <div class="container mx-auto px-4">
+          <!-- About Me Section with Stylish Fade and Slide-In Animation -->
+          <h2
+            class="text-4xl font-bold mb-6 text-center opacity-0 animate-fade-slide-in hover:text-rose-800 cursor-pointer"
+          >
+            About Me
+          </h2>
+          <p
+            class="text-lg mb-8 text-center max-w-2xl mx-auto opacity-0 animate-fade-slide-in delay-100"
+          >
+            Hi, I'm
+            <span
+              class="font-semibold text-blue-400 hover:text-yellow-400 transition duration-300 hover:scale-105 cursor-pointer"
+              >Sankalp Kumar</span
+            >, an MCA student at
+            <span
+              class="font-semibold hover:text-yellow-400 transition duration-300 hover:scale-105 cursor-pointer"
+              >LNCT Bhopal</span
+            >
+            and a passionate web developer dedicated to crafting innovative
+            solutions that address real-world challenges. With a strong
+            foundation in both front-end and back-end technologies, I aim to
+            deliver seamless user experiences and robust functionalities. I’m
+            currently learning
+            <span
+              class="font-semibold hover:text-yellow-400 transition duration-300 hover:scale-105 cursor-pointer"
+              >Data Structures and Algorithms (DSA)</span
+            >
+            and
+            <span
+              class="font-semibold hover:text-yellow-400 transition duration-300 hover:scale-105 cursor-pointer"
+              >Flutter</span
+            >, while exploring new technologies to enhance my skill set.
+          </p>
+
+          <!-- Key Highlights Section with Pop-In Animation and Hover Effects -->
+          <h3
+            class="text-3xl font-semibold mb-4 text-center opacity-0 animate-fade-slide-in delay-200 hover:text-yellow-400 cursor-pointer"
+          >
+            Key Highlights
+          </h3>
+          <div
+            class="bg-gray-800 rounded-lg p-6 shadow-lg opacity-0 animate-fade-slide-in delay-300"
+          >
+            <ul class="list-disc list-inside space-y-4">
+              <li
+                class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg"
+              >
+                <span class="text-blue-400 mr-2">🌐</span>
+                <span
+                  >Tech Stack:
+                  <span class="font-semibold"
+                    >Python, Django, Flutter, JavaScript, HTML, CSS, Tailwind
+                    CSS, Bootstrap, WordPress, Flutterflow</span
+                  ></span
                 >
-                  See My Work
-                </a>
-              </div>
-              <!-- Profile Picture with Slide-In Animation -->
-              <div class="w-full md:w-1/2 mt-8 md:mt-0 animate__animated animate__fadeInRight animate__delay-2s">
-                <div class="flex justify-center md:justify-end">
-                  <img
-                    src="assets/profile_pic.jpg"
-                    alt="Profile Picture"
-                    class="mx-auto rounded-full shadow-lg w-64 h-64 md:w-80 md:h-80 transition duration-500 ease-in-out transform hover:scale-105"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-          
-          <section class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-12" id="about">
-            <div class="container mx-auto px-4">
-              <!-- About Me Section with Stylish Fade and Slide-In Animation -->
-              <h2 class="text-4xl font-bold mb-6 text-center opacity-0 animate-fade-slide-in hover:text-rose-800 cursor-pointer">About Me</h2>
-              <p class="text-lg mb-8 text-center max-w-2xl mx-auto opacity-0 animate-fade-slide-in delay-100">
-                Hi, I'm <span class="font-semibold text-blue-400 hover:text-yellow-400 transition duration-300 hover:scale-105 cursor-pointer">Sankalp Kumar</span>, an MCA student at <span class="font-semibold hover:text-yellow-400 transition duration-300 hover:scale-105 cursor-pointer">LNCT Bhopal</span> and a passionate web developer dedicated to crafting innovative solutions that address real-world challenges. With a strong foundation in both front-end and back-end technologies, I aim to deliver seamless user experiences and robust functionalities. I’m currently learning <span class="font-semibold hover:text-yellow-400 transition duration-300 hover:scale-105 cursor-pointer">Data Structures and Algorithms (DSA)</span> and <span class="font-semibold hover:text-yellow-400 transition duration-300 hover:scale-105 cursor-pointer">Flutter</span>, while exploring new technologies to enhance my skill set.
+              </li>
+              <li
+                class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg"
+              >
+                <span class="text-blue-400 mr-2">🔧</span>
+                <span
+                  >Specialization in
+                  <span class="font-semibold">Backend Development</span> and API
+                  Integration</span
+                >
+              </li>
+              <li
+                class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg"
+              >
+                <span class="text-blue-400 mr-2">🏆</span>
+                <span
+                  >Runner-up in
+                  <span class="font-semibold">Amity Techphilia 6.0</span> in Web
+                  Technology</span
+                >
+              </li>
+              <li
+                class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg"
+              >
+                <span class="text-blue-400 mr-2">🤖</span>
+                <span
+                  >Developed a
+                  <span class="font-semibold">Telegram bot</span> that automates
+                  PDF operations</span
+                >
+              </li>
+              <li
+                class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg"
+              >
+                <span class="text-blue-400 mr-2">📈</span>
+                <span
+                  >Strong understanding of
+                  <span class="font-semibold">Data Structures</span> and
+                  <span class="font-semibold">Algorithms (DSA)</span></span
+                >
+              </li>
+              <li
+                class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg"
+              >
+                <span class="text-blue-400 mr-2">💻</span>
+                <span
+                  >Active member of
+                  <span class="font-semibold">GDG LNCT</span></span
+                >
+              </li>
+              <li
+                class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg"
+              >
+                <span class="text-blue-400 mr-2">🛠️</span>
+                <span
+                  >Tools:
+                  <span class="font-semibold"
+                    >Git, GitHub, Visual Studio Code, Postman, Figma,
+                    Docker</span
+                  ></span
+                >
+              </li>
+              <li
+                class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg"
+              >
+                <span class="text-blue-400 mr-2">📄</span>
+                <span
+                  >Cloned several websites using
+                  <span class="font-semibold">Tailwind CSS</span></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="bg-gray-900 py-12" id="project">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl font-bold mb-6 text-white text-center animate-fade-slide-in hover:text-yellow-400 cursor-pointer"
+        >
+          Latest Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Project Card 1 -->
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 animate-fade-slide-in"
+          >
+            <img
+              src="assets/Telegram_Bot.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-white hover:text-yellow-300 cursor-pointer"
+              >
+                PDF Genie
+              </h3>
+              <p class="text-gray-400 mb-4">
+                PDF Genie is a Telegram bot designed to assist users with a
+                variety of PDF operations, including merging, splitting,
+                locking, unlocking, and compressing PDF files. Built using
+                Python and the python-telegram-bot library.
               </p>
-              
-          
-              <!-- Key Highlights Section with Pop-In Animation and Hover Effects -->
-              <h3 class="text-3xl font-semibold mb-4 text-center opacity-0 animate-fade-slide-in delay-200 hover:text-yellow-400 cursor-pointer">Key Highlights</h3>
-              <div class="bg-gray-800 rounded-lg p-6 shadow-lg opacity-0 animate-fade-slide-in delay-300">
-                <ul class="list-disc list-inside space-y-4">
-                  <li class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg">
-                    <span class="text-blue-400 mr-2">🌐</span>
-                    <span>Tech Stack: <span class="font-semibold">Python, Django, Flutter, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, WordPress, Flutterflow</span></span>
-                  </li>
-                  <li class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg">
-                    <span class="text-blue-400 mr-2">🔧</span>
-                    <span>Specialization in <span class="font-semibold">Backend Development</span> and API Integration</span>
-                  </li>
-                  <li class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg">
-                    <span class="text-blue-400 mr-2">🏆</span>
-                    <span>Runner-up in <span class="font-semibold">Amity Techphilia 6.0</span> in Web Technology</span>
-                  </li>
-                  <li class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg">
-                    <span class="text-blue-400 mr-2">🤖</span>
-                    <span>Developed a <span class="font-semibold">Telegram bot</span> that automates PDF operations</span>
-                  </li>
-                  <li class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg">
-                    <span class="text-blue-400 mr-2">📈</span>
-                    <span>Strong understanding of <span class="font-semibold">Data Structures</span> and <span class="font-semibold">Algorithms (DSA)</span></span>
-                  </li>
-                  <li class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg">
-                    <span class="text-blue-400 mr-2">💻</span>
-                    <span>Active member of <span class="font-semibold">GDG LNCT</span></span>
-                  </li>
-                  <li class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg">
-                    <span class="text-blue-400 mr-2">🛠️</span>
-                    <span>Tools: <span class="font-semibold">Git, GitHub, Visual Studio Code, Postman, Figma, Docker</span></span>
-                  </li>
-                  <li class="flex items-center hover:bg-gray-700 hover:scale-105 transform transition duration-300 p-3 rounded-lg">
-                    <span class="text-blue-400 mr-2">📄</span>
-                    <span>Cloned several websites using <span class="font-semibold">Tailwind CSS</span></span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          
-        
-          
-        
-           </main>
-           <section class="bg-gray-900 py-12" id="project">
-            <div class="container mx-auto px-4">
-              <h2 class="text-4xl font-bold mb-6 text-white text-center animate-fade-slide-in hover:text-yellow-400 cursor-pointer">
-                Latest Projects
-              </h2>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project Card 1 -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 animate-fade-slide-in">
-                  <img src="assets/Telegram_Bot.png" alt="Project 1" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
-                  <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white hover:text-yellow-300 cursor-pointer">PDF Genie</h3>
-                    <p class="text-gray-400 mb-4">
-                      PDF Genie is a Telegram bot designed to assist users with a variety of PDF operations, including merging, splitting, locking, unlocking, and compressing PDF files. Built using Python and the python-telegram-bot library.
-                    </p>
-                    <p class="text-gray-500">
-                      Tech Stack: <span class="font-semibold">Python, Sqlite</span>
-                    </p>
-                    <div class="mt-4">
-                      <a href="https://github.com/sankalpkumar111/PDF_BOT" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
-                        View on GitHub
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Project Card 2 -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 animate-fade-slide-in delay-100">
-                  <img src="assets/ws2.jpeg" alt="Project 2" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
-                  <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white hover:text-yellow-300 cursor-pointer">WebScraper</h3>
-                    <p class="text-gray-400 mb-4">
-                      WebScraper is a Django-based application that allows users to scrape specific elements from a URL, perfect for collecting specific data from a webpage.
-                    </p>
-                    <p class="text-gray-500">
-                      Tech Stack: <span class="font-semibold">Python, Django, HTML, Bootstrap</span>
-                    </p>
-                    <div class="mt-4">
-                      <a href="https://github.com/sankalpkumar111/Web-scrapping" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
-                        View on GitHub
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Project Card 3 -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 animate-fade-slide-in delay-200">
-                  <img src="assets/bmi.jpeg" alt="Project 3" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
-                  <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white hover:text-yellow-300 cursor-pointer">BMI Calculator</h3>
-                    <p class="text-gray-400 mb-4">
-                      This is a Flutter app that calculates the Body Mass Index (BMI) based on user inputs, helping users understand their health status.
-                    </p>
-                    <p class="text-gray-500">
-                      Tech Stack: <span class="font-semibold">Dart, Flutter</span>
-                    </p>
-                    <div class="mt-4">
-                      <a href="https://github.com/sankalpkumar111/BMI_App" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
-                        View on GitHub
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Project Card 4 -->
-                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 animate-fade-slide-in delay-300">
-                  <img src="assets/BrilworxClone.jpeg" alt="Project 4" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
-                  <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white hover:text-yellow-300 cursor-pointer">Brilworx Clone</h3>
-                    <p class="text-gray-400 mb-4">
-                      This project is a clone of the Brilworx website built with Tailwind CSS and Vite, replicating the design and responsiveness of the original site.
-                    </p>
-                    <p class="text-gray-500">
-                      Tech Stack: <span class="font-semibold">HTML, Tailwind CSS, Vite</span>
-                    </p>
-                    <div class="mt-4">
-                      <a href="https://github.com/sankalpkumar111/Brilworx_clone" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
-                        View on GitHub
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-8 text-center">
-                <a href="https://github.com/sankalpkumar111/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition duration-300 animate-fade-slide-in delay-400">
-                  View All Projects
+              <p class="text-gray-500">
+                Tech Stack: <span class="font-semibold">Python, Sqlite</span>
+              </p>
+              <div class="mt-4">
+                <a
+                  href="https://github.com/sankalpkumar111/PDF_BOT"
+                  target="_blank"
+                  class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                >
+                  View on GitHub
                 </a>
               </div>
             </div>
-          </section>
-          
+          </div>
+          <!-- Project Card 2 -->
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 animate-fade-slide-in delay-100"
+          >
+            <img
+              src="assets/ws2.jpeg"
+              alt="Project 2"
+              class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-white hover:text-yellow-300 cursor-pointer"
+              >
+                WebScraper
+              </h3>
+              <p class="text-gray-400 mb-4">
+                WebScraper is a Django-based application that allows users to
+                scrape specific elements from a URL, perfect for collecting
+                specific data from a webpage.
+              </p>
+              <p class="text-gray-500">
+                Tech Stack:
+                <span class="font-semibold"
+                  >Python, Django, HTML, Bootstrap</span
+                >
+              </p>
+              <div class="mt-4">
+                <a
+                  href="https://github.com/sankalpkumar111/Web-scrapping"
+                  target="_blank"
+                  class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 animate-fade-slide-in delay-200"
+          >
+            <img
+              src="assets/bmi.jpeg"
+              alt="Project 3"
+              class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-white hover:text-yellow-300 cursor-pointer"
+              >
+                BMI Calculator
+              </h3>
+              <p class="text-gray-400 mb-4">
+                This is a Flutter app that calculates the Body Mass Index (BMI)
+                based on user inputs, helping users understand their health
+                status.
+              </p>
+              <p class="text-gray-500">
+                Tech Stack: <span class="font-semibold">Dart, Flutter</span>
+              </p>
+              <div class="mt-4">
+                <a
+                  href="https://github.com/sankalpkumar111/BMI_App"
+                  target="_blank"
+                  class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 4 -->
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 animate-fade-slide-in delay-300"
+          >
+            <img
+              src="assets/BrilworxClone.jpeg"
+              alt="Project 4"
+              class="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
+            />
+            <div class="p-6">
+              <h3
+                class="text-xl font-semibold text-white hover:text-yellow-300 cursor-pointer"
+              >
+                Brilworx Clone
+              </h3>
+              <p class="text-gray-400 mb-4">
+                This project is a clone of the Brilworx website built with
+                Tailwind CSS and Vite, replicating the design and responsiveness
+                of the original site.
+              </p>
+              <p class="text-gray-500">
+                Tech Stack:
+                <span class="font-semibold">HTML, Tailwind CSS, Vite</span>
+              </p>
+              <div class="mt-4">
+                <a
+                  href="https://github.com/sankalpkumar111/Brilworx_clone"
+                  target="_blank"
+                  class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 text-center">
+          <a
+            href="https://github.com/sankalpkumar111/"
+            class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition duration-300 animate-fade-slide-in delay-400"
+          >
+            View All Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="bg-gray-900 py-12">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-8 text-white text-center hover:text-yellow-300 cursor-pointer">Skills</h2>
+        <h2
+          class="text-4xl font-bold mb-8 text-white text-center hover:text-yellow-300 cursor-pointer"
+        >
+          Skills
+        </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Frontend Development -->
@@ -421,10 +555,14 @@ limitations under the License. -->
         </div>
       </div>
     </section>
-    
+
     <section class="bg-gray-900 py-16 px-6">
       <div class="max-w-7xl mx-auto text-center mb-12">
-        <h2 class="text-4xl font-bold text-white mb-6 hover:text-yellow-300 cursor-pointer">Latest Articles</h2>
+        <h2
+          class="text-4xl font-bold text-white mb-6 hover:text-yellow-300 cursor-pointer"
+        >
+          Latest Articles
+        </h2>
         <p class="text-gray-400 text-lg">
           Stay updated with my latest insights and tutorials on web development
           and technology trends.
@@ -618,9 +756,6 @@ limitations under the License. -->
           </svg>
         </a>
       </div>
-
-    
     </footer>
-
   </body>
 </html>
