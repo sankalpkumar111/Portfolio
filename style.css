@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scrolldown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* Move down */
+    }
+    100% {
+      transform: translateY(0); /* Return to original position */
+    }
+  }
+  
+  .hover\:animate-Scrolldown:hover {
+    animation: scrolldown 0.5s ease-in-out;
+  }
+  
+
 /* Base styles */
 body {
     font-family: 'Arial', sans-serif;
