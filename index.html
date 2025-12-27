@@ -1,0 +1,819 @@
+<!-- Copyright [2024] [Sankalp kumar]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script type="module" src="script.js"></script>
+   <title>Sankalp Kumar | Backend Developer & System Builder</title>
+   <meta
+  name="description"
+  content="Sankalp Kumar is a backend developer specializing in Django, REST APIs, automation, and scalable system design. View real-world projects, technical insights, and contact details."
+/>
+
+
+
+
+    <link
+      rel="shortcut icon"
+      href="assets/computer.png"
+      type="image/x-icon"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SWQBNX0C6F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SWQBNX0C6F");
+    </script>
+  </head>
+ <body class="bg-gray-950 text-gray-100 antialiased">
+  hello
+   <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-gray-900/80 border-b border-gray-800">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Brand -->
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-yellow-500/10 border border-yellow-500/30 flex items-center justify-center text-yellow-400 font-bold">
+        SK
+      </div>
+      <div class="leading-tight">
+        <p class="text-white font-semibold">Sankalp Kumar</p>
+        <p class="text-xs text-gray-400">Backend System Builder</p>
+      </div>
+    </div>
+
+    <!-- Desktop Nav -->
+    <ul class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+      <li><a href="#home" class="hover:text-yellow-400 transition">Overview</a></li>
+      <li><a href="#about" class="hover:text-yellow-400 transition">Profile</a></li>
+      <li><a href="#project" class="hover:text-yellow-400 transition">Builds</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
+    </ul>
+
+    <!-- Actions -->
+    <div class="hidden md:flex items-center gap-4">
+      <a
+        href="media/Sankalp_Kumar_resume.pdf"
+        download
+        class="px-4 py-2 text-sm font-medium text-yellow-400 border border-yellow-500/40 rounded-lg hover:bg-yellow-500/10 transition"
+      >
+        Resume
+      </a>
+    </div>
+
+    <!-- Mobile Button -->
+    <button
+      id="mobile-menu-button"
+      class="md:hidden text-gray-300 hover:text-yellow-400 transition"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden border-t border-gray-800 bg-gray-900/95">
+    <ul class="px-6 py-6 space-y-4 text-gray-300">
+      <li><a href="#home" class="block hover:text-yellow-400">Overview</a></li>
+      <li><a href="#about" class="block hover:text-yellow-400">Profile</a></li>
+      <li><a href="#project" class="block hover:text-yellow-400">Builds</a></li>
+      <li><a href="#contact" class="block hover:text-yellow-400">Contact</a></li>
+      <li>
+        <a
+          href="media/Sankalp_Kumar_resume.pdf"
+          download
+          class="block text-center mt-4 px-4 py-2 border border-yellow-500/40 text-yellow-400 rounded-lg"
+        >
+          Resume
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+ 
+    <main>
+      <section
+  id="home"
+  class="relative pt-32 pb-24 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white overflow-hidden"
+>
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- Left: Text -->
+    <div class="space-y-6">
+      <span class="inline-block text-sm text-yellow-400 font-medium tracking-wide uppercase">
+        System Overview
+      </span>
+
+      <h1 class="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
+        Sankalp Kumar<br />
+        <span class="text-yellow-400" id="dynamic-role"></span>
+      </h1>
+
+      <p class="text-gray-300 max-w-xl text-lg">
+        I design and build scalable backend systems using Django, REST APIs,
+        automation, and clean architecture — focused on real-world problems.
+      </p>
+
+      <div class="flex flex-wrap gap-4 pt-4">
+        <a
+          href="#project"
+          class="px-6 py-3 rounded-lg bg-yellow-500 text-gray-900 font-semibold hover:bg-yellow-600 transition"
+        >
+          View Builds
+        </a>
+
+        <a
+          href="media/Sankalp_Kumar_resume.pdf"
+          download
+          class="px-6 py-3 rounded-lg border border-yellow-500/40 text-yellow-400 hover:bg-yellow-500/10 transition"
+        >
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Profile / Visual -->
+    <div class="flex justify-center md:justify-end">
+      <div class="relative">
+        <div class="absolute inset-0 rounded-full bg-yellow-500/20 blur-2xl"></div>
+        <img
+          src="assets/profile_pic.jpg"
+          alt="Sankalp Kumar"
+          class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border border-gray-800 shadow-xl"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section id="about" class="bg-gray-950 py-24 text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
+        Profile
+      </span>
+      <h2 class="text-4xl font-bold mt-3">
+        Builder’s Overview
+      </h2>
+      <p class="text-gray-400 mt-4 text-lg">
+        A brief look at how I think, build, and grow as an engineer.
+      </p>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+      <!-- Left: Narrative -->
+      <div class="space-y-6">
+        <p class="text-gray-300 leading-relaxed text-lg">
+          I am <span class="text-yellow-400 font-semibold">Sankalp Kumar</span>,
+          an MCA graduate focused on building reliable backend systems and
+          automation-driven applications. I work primarily with
+          <span class="font-semibold text-gray-200">Python, Django, REST APIs</span>,
+          and supporting technologies that enable scalability and maintainability.
+        </p>
+
+        <p class="text-gray-300 leading-relaxed text-lg">
+          My projects emphasize real-world problem solving—secure authentication,
+          background task processing, structured data handling, and clean system
+          design. I prefer clarity over complexity and focus on solutions that
+          are practical, testable, and extensible.
+        </p>
+
+        <p class="text-gray-400 leading-relaxed">
+          Currently, I am deepening my expertise in backend architecture,
+          automation, and system-level thinking while preparing for professional
+          software engineering roles.
+        </p>
+      </div>
+
+      <!-- Right: Capability Cards -->
+      <div class="grid grid-cols-1 gap-6">
+
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-2">
+            Core Engineering Focus
+          </h3>
+          <p class="text-gray-300">
+            Backend development, RESTful APIs, authentication systems,
+            background jobs, and data modeling.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-2">
+            Notable Work
+          </h3>
+          <p class="text-gray-300">
+            Built production-grade projects such as <span class="font-medium">DocumentVault</span>
+            and <span class="font-medium">PDF Genie</span>, focusing on security,
+            automation, and user-centric workflows.
+          </p>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-2">
+            Tools & Workflow
+          </h3>
+          <p class="text-gray-300">
+            Git, GitHub, Docker, Postman, VS Code, PostgreSQL, Redis,
+            and modern CSS frameworks.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+  <section id="project" class="bg-gray-950 py-24 text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
+        Campaigns
+      </span>
+      <h2 class="text-4xl font-bold mt-3">
+        Selected Builds
+      </h2>
+      <p class="text-gray-400 mt-4 text-lg">
+        Real-world systems built with clear goals, structured execution,
+        and measurable outcomes.
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- DocumentVault -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
+        <img src="assets/DocumentVault.png" alt="DocumentVault" class="w-full h-56 object-cover" />
+
+        <div class="p-6 space-y-4">
+          <h3 class="text-2xl font-semibold text-yellow-400">DocumentVault</h3>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Problem:</span>
+            Managing sensitive documents with expiry tracking and secure access
+            is error-prone and often unstructured.
+          </p>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Strategy:</span>
+            Built a Django-based platform with OTP authentication, background
+            task processing, and automated expiry reminders.
+          </p>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Result:</span>
+            A secure, scalable document lifecycle system with user-controlled
+            data access and automation.
+          </p>
+
+          <p class="text-sm text-gray-400">
+            <span class="font-semibold">Stack:</span>
+            Django · PostgreSQL · Celery · Redis · Tailwind CSS
+          </p>
+
+          <div class="pt-4">
+            <a
+              href="https://document-vault-ghi6.onrender.com/"
+              target="_blank"
+              class="inline-block px-5 py-2 rounded-lg bg-yellow-500 text-gray-900 font-semibold hover:bg-yellow-600 transition"
+            >
+              View Live
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PDF Genie -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
+        <img src="assets/Telegram_Bot.png" alt="PDF Genie" class="w-full h-56 object-cover" />
+
+        <div class="p-6 space-y-4">
+          <h3 class="text-2xl font-semibold text-yellow-400">PDF Genie</h3>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Problem:</span>
+            Users need quick PDF operations without installing heavy desktop tools.
+          </p>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Strategy:</span>
+            Developed a Telegram bot that performs PDF operations via chat commands.
+          </p>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Result:</span>
+            Lightweight PDF automation directly accessible within Telegram.
+          </p>
+
+          <p class="text-sm text-gray-400">
+            <span class="font-semibold">Stack:</span>
+            Python · SQLite · Telegram Bot API
+          </p>
+
+          <div class="pt-4">
+            <a
+              href="https://t.me/PDFGeniebot"
+              target="_blank"
+              class="inline-block px-5 py-2 rounded-lg border border-yellow-500/40 text-yellow-400 hover:bg-yellow-500/10 transition"
+            >
+              Use Bot
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- WebScraper -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
+        <img src="assets/ws2.jpeg" alt="WebScraper" class="w-full h-56 object-cover" />
+
+        <div class="p-6 space-y-4">
+          <h3 class="text-2xl font-semibold text-yellow-400">WebScraper</h3>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Problem:</span>
+            Extracting structured data from websites is repetitive and manual.
+          </p>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Strategy:</span>
+            Built a Django app to scrape specific page elements based on user input.
+          </p>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Result:</span>
+            A reusable data extraction tool for research and analysis.
+          </p>
+
+          <p class="text-sm text-gray-400">
+            <span class="font-semibold">Stack:</span>
+            Django · Python · HTML · Bootstrap
+          </p>
+
+          <div class="pt-4">
+            <a
+              href="https://web-scrapping-4flz.onrender.com/"
+              target="_blank"
+              class="inline-block px-5 py-2 rounded-lg border border-yellow-500/40 text-yellow-400 hover:bg-yellow-500/10 transition"
+            >
+              View Live
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Campus Connect -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
+        <img src="assets/campus_connect.jpg" alt="Campus Connect" class="w-full h-56 object-cover" />
+
+        <div class="p-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <h3 class="text-2xl font-semibold text-yellow-400">Campus Connect</h3>
+            <span class="text-xs px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/30">
+              Currently Working
+            </span>
+          </div>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Problem:</span>
+            Manual campus event handling leads to poor coordination and duplication.
+          </p>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Strategy:</span>
+            Building a role-based event platform with REST APIs, QR ticketing,
+            and duplicate entry prevention.
+          </p>
+
+          <p class="text-gray-300">
+            <span class="font-semibold text-gray-200">Current Progress:</span>
+            Core backend, authentication, roles, and workflows implemented.
+            Advanced features are in active development.
+          </p>
+
+          <p class="text-sm text-gray-400">
+            <span class="font-semibold">Stack:</span>
+            Django · DRF · PostgreSQL · QR Code · Bootstrap
+          </p>
+
+          <div class="pt-4">
+            <a
+              href="#contact"
+              class="inline-block px-5 py-2 rounded-lg border border-yellow-500/40 text-yellow-400 hover:bg-yellow-500/10 transition"
+            >
+              Request Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Explore All Builds -->
+    <div class="mt-12 text-center">
+      <a
+        href="https://github.com/sankalpkumar111/"
+        target="_blank"
+        class="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-yellow-500/40 text-yellow-400 font-semibold hover:bg-yellow-500/10 transition"
+      >
+        Explore All Builds
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+<section id="skills" class="bg-gray-950 py-24 text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
+        Capabilities
+      </span>
+      <h2 class="text-4xl font-bold mt-3">
+        Core Structures
+      </h2>
+      <p class="text-gray-400 mt-4 text-lg">
+        The foundational components I use to design, build, and scale
+        real-world software systems.
+      </p>
+    </div>
+
+    <!-- Structures Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- Backend Core -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
+        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
+          Backend Core
+        </h3>
+        <p class="text-gray-300 mb-4">
+          Design and implementation of scalable backend logic, authentication
+          systems, and RESTful APIs.
+        </p>
+        <p class="text-gray-400 text-sm">
+          <span class="font-semibold">Technologies:</span>
+          Python · Django · Django REST Framework · FastAPI
+        </p>
+      </div>
+
+      <!-- Data & Storage -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
+        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
+          Data & Storage
+        </h3>
+        <p class="text-gray-300 mb-4">
+          Structured data modeling, relational databases, and persistence
+          strategies for reliable systems.
+        </p>
+        <p class="text-gray-400 text-sm">
+          <span class="font-semibold">Technologies:</span>
+          PostgreSQL · SQLite · MySQL · Firebase
+        </p>
+      </div>
+
+      <!-- Automation & Background Processing -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
+        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
+          Automation & Background Tasks
+        </h3>
+        <p class="text-gray-300 mb-4">
+          Asynchronous processing, scheduled jobs, and workflow automation
+          for scalable applications.
+        </p>
+        <p class="text-gray-400 text-sm">
+          <span class="font-semibold">Technologies:</span>
+          Celery · Redis · Telegram Bot API
+        </p>
+      </div>
+
+      <!-- Frontend & Interface Layer -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
+        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
+          Frontend & Interface Layer
+        </h3>
+        <p class="text-gray-300 mb-4">
+          Clean, responsive interfaces that integrate seamlessly with backend
+          systems.
+        </p>
+        <p class="text-gray-400 text-sm">
+          <span class="font-semibold">Technologies:</span>
+          HTML · CSS · JavaScript · Tailwind CSS · Bootstrap · React.js
+        </p>
+      </div>
+
+ <!-- Exploratory Experience -->
+<div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
+  <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
+    Exploratory Experience
+  </h3>
+  <p class="text-gray-300 mb-4">
+    Early-stage exploration of cross-platform development concepts to
+    understand mobile workflows and frontend-backend integration.
+  </p>
+  <p class="text-gray-400 text-sm">
+    <span class="font-semibold">Exposure:</span>
+    Flutter · FlutterFlow
+  </p>
+</div>
+
+
+      <!-- Tools & Workflow -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
+        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
+          Tools & Engineering Workflow
+        </h3>
+        <p class="text-gray-300 mb-4">
+          Version control, API testing, containerization, and collaborative
+          development practices.
+        </p>
+        <p class="text-gray-400 text-sm">
+          <span class="font-semibold">Tools:</span>
+          Git · GitHub · Docker · Postman · VS Code · Figma
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="bg-gray-950 py-24 px-6 text-white">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section Header -->
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
+        Knowledge Sharing
+      </span>
+      <h2 class="text-4xl font-bold mt-3">
+        Technical Notes & Insights
+      </h2>
+      <p class="text-gray-400 mt-4 text-lg">
+        Practical observations, tools, and workflows explored while building
+        and maintaining real-world software systems.
+      </p>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Article 1 -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
+        <div
+          class="h-56 bg-cover bg-center"
+          style="background-image: url('assets/uv_python.jpeg')"
+        ></div>
+
+        <div class="p-6 space-y-4">
+          <h3 class="text-xl font-semibold text-white">
+            uv: A High-Performance Python Project Tool
+          </h3>
+
+          <p class="text-gray-400">
+            An overview of <strong>uv</strong>, a Rust-based Python project and
+            dependency manager focused on speed, simplicity, and modern
+            workflows.
+          </p>
+
+          <a
+            href="https://www.linkedin.com/posts/sankalp-kumar-986b12218_projects-activity-7319215676395560962-CM9f"
+            target="_blank"
+            class="inline-block text-yellow-400 font-medium hover:underline transition"
+          >
+            Read Insight →
+          </a>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
+        <div
+          class="h-56 bg-cover bg-center"
+          style="background-image: url('assets/post1.jpeg')"
+        ></div>
+
+        <div class="p-6 space-y-4">
+          <h3 class="text-xl font-semibold text-white">
+            Git Commands That Improve Daily Workflow
+          </h3>
+
+          <p class="text-gray-400">
+            A curated set of Git commands that simplify collaboration,
+            debugging, and version control in real development environments.
+          </p>
+
+          <a
+            href="https://www.linkedin.com/posts/sankalp-kumar-986b12218_git-versioncontrol-softwaredevelopment-activity-7257387292741263360-3ADY"
+            target="_blank"
+            class="inline-block text-yellow-400 font-medium hover:underline transition"
+          >
+            Read Insight →
+          </a>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
+        <img
+          src="assets/QA_ToolBox.jpg"
+          alt="QA Toolbox"
+          class="w-full h-56 object-cover"
+        />
+
+        <div class="p-6 space-y-4">
+          <h3 class="text-xl font-semibold text-white">
+            QA Toolbox: Essential Tools for Reliable Software
+          </h3>
+
+          <p class="text-gray-400">
+            A structured collection of testing tools covering automation,
+            API testing, performance analysis, and DevOps integration.
+          </p>
+
+          <a
+            href="https://www.linkedin.com/posts/sankalp-kumar-986b12218_qa-softwaretesting-automation-activity-7306909595388506112-uYhy"
+            target="_blank"
+            class="inline-block text-yellow-400 font-medium hover:underline transition"
+          >
+            Read Insight →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View All -->
+    <div class="text-center mt-12">
+      <a
+        href="https://www.linkedin.com/in/sankalp-kumar-986b12218/"
+        target="_blank"
+        class="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-yellow-500/40 text-yellow-400 font-semibold hover:bg-yellow-500/10 transition"
+      >
+        View All Technical Notes
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="bg-gray-950 py-24 text-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <!-- Section Header -->
+    <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
+      Get in Touch
+    </span>
+
+    <h2 class="text-4xl font-bold mt-3 mb-6">
+      Let’s Discuss a Real Problem
+    </h2>
+
+    <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-10">
+      If you’re looking for someone who can design reliable backend systems,
+      build clean APIs, or collaborate on a meaningful software project,
+      I’d be glad to connect. I value clear requirements, thoughtful design,
+      and practical execution.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a
+        href="mailto:sankalpkumar911@gmail.com"
+        class="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-yellow-500 text-gray-900 font-semibold hover:bg-yellow-600 transition"
+      >
+        Start a Conversation
+      </a>
+
+      <a
+        href="https://github.com/sankalpkumar111"
+        target="_blank"
+        class="inline-flex items-center justify-center px-8 py-3 rounded-lg border border-yellow-500/40 text-yellow-400 font-semibold hover:bg-yellow-500/10 transition"
+      >
+        View GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+    
+      <footer class="bg-gray-950 py-16 text-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Closing Statement -->
+    <p class="text-lg text-gray-300 mb-10 max-w-3xl mx-auto">
+      I approach software with curiosity, discipline, and a focus on building
+      systems that are reliable, maintainable, and purpose-driven.
+    </p>
+
+    <!-- Social Links -->
+    <div class="flex justify-center gap-8 mb-10">
+
+      <!-- GitHub -->
+      <a
+        href="https://github.com/sankalpkumar111"
+        target="_blank"
+        class="text-gray-400 hover:text-yellow-400 transition"
+        aria-label="GitHub"
+      >
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.727-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.084-.729.084-.729 1.205.084 1.838 1.234 1.838 1.234 1.07 1.834 2.809 1.303 3.495.997.108-.776.418-1.303.76-1.603-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.221-.123-.304-.535-1.527.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 016.005 0c2.292-1.552 3.3-1.23 3.3-1.23.653 1.649.241 2.872.118 3.176.77.841 1.234 1.911 1.234 3.221 0 4.61-2.805 5.625-5.475 5.921.43.372.823 1.1.823 2.219v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.593 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/in/sankalp-kumar-986b12218/"
+        target="_blank"
+        class="text-gray-400 hover:text-yellow-400 transition"
+        aria-label="LinkedIn"
+      >
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.75 19.625h-3.5v-11.25h3.5v11.25zm-1.75-12.75c-1.122 0-2.031-.909-2.031-2.031s.909-2.031 2.031-2.031 2.031.909 2.031 2.031-.909 2.031-2.031 2.031zm13.75 12.75h-3.5v-5.5c0-1.331-.024-3.043-1.855-3.043-1.856 0-2.141 1.448-2.141 2.945v5.598h-3.5v-11.25h3.363v1.536h.048c.468-.884 1.607-1.814 3.309-1.814 3.54 0 4.188 2.33 4.188 5.362v6.166z"/>
+        </svg>
+      </a>
+
+      <!-- X -->
+      <a
+        href="https://x.com/sankalpkumar111"
+        target="_blank"
+        class="text-gray-400 hover:text-yellow-400 transition"
+        aria-label="X"
+      >
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22.46 6c-.77.35-1.6.59-2.46.69a4.28 4.28 0 001.88-2.36 8.56 8.56 0 01-2.7 1.03A4.26 4.26 0 0016.2 4c-2.37 0-4.29 1.92-4.29 4.28 0 .34.04.68.1 1A12.11 12.11 0 013 5.29a4.28 4.28 0 001.33 5.71 4.22 4.22 0 01-1.94-.54v.06c0 2.02 1.44 3.7 3.34 4.08-.35.1-.73.15-1.12.15-.27 0-.53-.02-.78-.08a4.29 4.29 0 004 2.96A8.55 8.55 0 012 18.58a12.09 12.09 0 006.56 1.93c7.88 0 12.2-6.53 12.2-12.2v-.56a8.7 8.7 0 002.15-2.23z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a
+        href="https://www.instagram.com/sankalp._kr/"
+        target="_blank"
+        class="text-gray-400 hover:text-yellow-400 transition"
+        aria-label="Instagram"
+      >
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2.2c3.2 0 3.584.012 4.847.07 1.259.058 2.11.275 2.601.482.6.242 1.032.531 1.486.985.454.454.743.886.985 1.486.207.49.424 1.341.482 2.601.058 1.263.07 1.646.07 4.847s-.012 3.584-.07 4.847c-.058 1.259-.275 2.11-.482 2.601-.242.6-.531 1.032-.985 1.486-.454.454-.886.743-1.486.985-.49.207-1.341.424-2.601.482-1.263.058-1.646.07-4.847.07s-3.584-.012-4.847-.07c-1.259-.058-2.11-.275-2.601-.482-.6-.242-1.032-.531-1.486-.985-.454-.454-.743-.886-.985-1.486-.207-.49-.424-1.341-.482-2.601C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.847c.058-1.259.275-2.11.482-2.601.242-.6.531-1.032.985-1.486.454-.454.886-.743 1.486-.985.49-.207 1.341-.424 2.601-.482 1.263-.058 1.646-.07 4.847-.07z"/>
+        </svg>
+      </a>
+
+      <!-- Email -->
+      <a
+        href="mailto:sankalpkumar911@gmail.com"
+        class="text-gray-400 hover:text-yellow-400 transition"
+        aria-label="Email"
+      >
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 12.713l11.976-8.392A1.003 1.003 0 0023.976 3H.023a1.003 1.003 0 00-.048 1.321l11.976 8.392c.427.299 1.051.299 1.478 0zM12 14l-11.975-8.392v10.55c0 .597.452 1.036 1.022 1.036h21.902c.57 0 1.021-.439 1.021-1.036V5.608L12 14z"/>
+        </svg>
+      </a>
+
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-sm text-gray-500">
+      © 2025 Sankalp Kumar. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+  </body>
+</html>

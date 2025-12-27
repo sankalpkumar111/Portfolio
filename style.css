@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scrolldown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* Move down */
+    }
+    100% {
+      transform: translateY(0); /* Return to original position */
+    }
+  }
+  
+  .hover\:animate-Scrolldown:hover {
+    animation: scrolldown 0.5s ease-in-out;
+  }
+  
+
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Gradient background for sections */
+.bg-gradient-to-r {
+    background: linear-gradient(to right, #1a202c, #2d3748);
+}
+
+/* Fading and sliding animation */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Class to trigger animation */
+.animate-fade-slide {
+    animation: fadeSlideIn 0.7s ease forwards;
+}
+
+/* Styling for buttons */
+button, a {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover, a:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    background-color: #2d3748;
+}
+
+.animate-fade-slide-in {
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .delay-100 {
+    transition-delay: 0.1s;
+  }
+  .delay-200 {
+    transition-delay: 0.2s;
+  }
+  .delay-300 {
+    transition-delay: 0.3s;
+  }
