@@ -8,7 +8,6 @@ document
       const roles = [
         'Backend System Builder',
         'Django & API Developer',
-        'Automation Engineer',
         'Problem Solver'
       ];
       let roleIndex = 0;
