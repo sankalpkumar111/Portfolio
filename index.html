@@ -11,809 +11,685 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <script type="module" src="script.js"></script>
-   <title>Sankalp Kumar | Backend Developer & System Builder</title>
-   <meta
-  name="description"
-  content="Sankalp Kumar is a backend developer specializing in Django, REST APIs, automation, and scalable system design. View real-world projects, technical insights, and contact details."
-/>
+  <!-- Primary SEO -->
+  <title>Sankalp Kumar | AI Backend Developer | GenAI, LangChain, FastAPI</title>
 
+  <meta
+    name="description"
+    content="Sankalp Kumar is an AI Backend Developer specializing in GenAI, LangChain, RAG systems, FastAPI, and scalable backend architecture. Explore real-world AI projects and system designs."
+  />
 
+  <meta name="keywords" content="Sankalp Kumar, AI Developer, GenAI Developer, LangChain, RAG, FastAPI, Django, Backend Developer, Machine Learning, LLM Engineer" />
 
+  <meta name="author" content="Sankalp Kumar" />
 
-    <link
-      rel="shortcut icon"
-      href="assets/computer.png"
-      type="image/x-icon"
-    />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-SWQBNX0C6F"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- Theme Color (for mobile UI) -->
+  <meta name="theme-color" content="#0F172A" />
 
-      gtag("config", "G-SWQBNX0C6F");
-    </script>
-  </head>
- <body class="bg-gray-950 text-gray-100 antialiased">
-  hello
-   <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-gray-900/80 border-b border-gray-800">
-  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <!-- Open Graph (LinkedIn / WhatsApp Preview) -->
+  <meta property="og:title" content="Sankalp Kumar | AI Backend Developer" />
+  <meta property="og:description" content="Building AI-powered backend systems using LLMs, LangChain, and scalable APIs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sankalpportfolio.netlify.app" />
+  <meta property="og:image" content="assets/preview.png" />
 
-    <!-- Brand -->
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-lg bg-yellow-500/10 border border-yellow-500/30 flex items-center justify-center text-yellow-400 font-bold">
-        SK
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sankalp Kumar | AI Backend Developer" />
+  <meta name="twitter:description" content="GenAI | LangChain | FastAPI | RAG Systems" />
+  <meta name="twitter:image" content="assets/preview.png" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/computer.png" type="image/x-icon" />
+
+  <!-- Fonts (Modern Dev + AI Look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="style.css" rel="stylesheet" />
+
+  <!-- Script -->
+  <script type="module" src="script.js"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SWQBNX0C6F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SWQBNX0C6F');
+  </script>
+</head> <body class="bg-gray-950 text-gray-100 antialiased">
+  
+ <header class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50">
+  <div class="glass flex items-center justify-between px-6 py-3">
+
+    <!-- System Identity -->
+    <div class="flex items-center gap-4">
+      <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-indigo-500/20 text-indigo-400 font-bold glow">
+        AI
       </div>
-      <div class="leading-tight">
-        <p class="text-white font-semibold">Sankalp Kumar</p>
-        <p class="text-xs text-gray-400">Backend System Builder</p>
+      <div>
+        <p class="text-sm text-gray-400">SYSTEM</p>
+        <p class="text-white text-sm font-semibold tracking-wider">
+          SANKALP.OS
+        </p>
       </div>
     </div>
 
-    <!-- Desktop Nav -->
-    <ul class="hidden md:flex items-center gap-8 text-sm text-gray-300">
-      <li><a href="#home" class="hover:text-yellow-400 transition">Overview</a></li>
-      <li><a href="#about" class="hover:text-yellow-400 transition">Profile</a></li>
-      <li><a href="#project" class="hover:text-yellow-400 transition">Builds</a></li>
-      <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
-    </ul>
-
-    <!-- Actions -->
-    <div class="hidden md:flex items-center gap-4">
-      <a
-        href="media/Sankalp_Kumar_resume.pdf"
-        download
-        class="px-4 py-2 text-sm font-medium text-yellow-400 border border-yellow-500/40 rounded-lg hover:bg-yellow-500/10 transition"
-      >
-        Resume
-      </a>
+    <!-- Navigation -->
+    <div class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+      <a href="#home" class="hover:text-indigo-400 transition">/home</a>
+      <a href="#about" class="hover:text-indigo-400 transition">/about</a>
+      <a href="#projects" class="hover:text-indigo-400 transition">/deployments</a>
+      <a href="#contact" class="hover:text-indigo-400 transition">/connect</a>
     </div>
 
-    <!-- Mobile Button -->
-    <button
-      id="mobile-menu-button"
-      class="md:hidden text-gray-300 hover:text-yellow-400 transition"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden border-t border-gray-800 bg-gray-900/95">
-    <ul class="px-6 py-6 space-y-4 text-gray-300">
-      <li><a href="#home" class="block hover:text-yellow-400">Overview</a></li>
-      <li><a href="#about" class="block hover:text-yellow-400">Profile</a></li>
-      <li><a href="#project" class="block hover:text-yellow-400">Builds</a></li>
-      <li><a href="#contact" class="block hover:text-yellow-400">Contact</a></li>
-      <li>
-        <a
-          href="media/Sankalp_Kumar_resume.pdf"
-          download
-          class="block text-center mt-4 px-4 py-2 border border-yellow-500/40 text-yellow-400 rounded-lg"
-        >
-          Resume
-        </a>
-      </li>
-    </ul>
-  </div>
-</header>
- 
-    <main>
-      <section
-  id="home"
-  class="relative pt-32 pb-24 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white overflow-hidden"
->
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-    <!-- Left: Text -->
-    <div class="space-y-6">
-      <span class="inline-block text-sm text-yellow-400 font-medium tracking-wide uppercase">
-        System Overview
+    <!-- Status + Resume -->
+    <div class="flex items-center gap-4">
+      <span class="hidden md:block text-xs text-green-400">
+        ● ACTIVE
       </span>
 
+      <a href="media/Sankalp_Kumar_resume.pdf"
+         class="px-4 py-2 text-xs rounded-md bg-gradient-to-r from-indigo-500 to-cyan-400 text-white glow">
+        Download CV
+      </a>
+    </div>
+  </div>
+</header>
+    <main>
+      <section id="home" class="relative pt-36 pb-28 overflow-hidden">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- LEFT: SYSTEM TEXT -->
+    <div class="space-y-6 animate-fade-slide">
+
+      <!-- System Tag -->
+      <div class="terminal text-sm">
+        > Initializing Sankalp.OS...
+      </div>
+
+      <!-- Main Heading -->
       <h1 class="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
-        Sankalp Kumar<br />
-        <span class="text-yellow-400" id="dynamic-role"></span>
+        <span class="gradient-text">AI Backend Engineer</span><br />
+        <span class="text-white">Building Intelligent Systems</span>
       </h1>
 
-      <p class="text-gray-300 max-w-xl text-lg">
-        I design and build scalable backend systems using Django, REST APIs,
-        automation, and clean architecture — focused on real-world problems.
+      <!-- Dynamic Role -->
+      <p class="text-indigo-400 text-lg font-mono">
+       <span id="dynamic-role"></span><span class="cursor">|</span>
       </p>
 
+      <!-- Description -->
+      <p class="text-gray-400 max-w-xl text-lg leading-relaxed">
+        I design and deploy AI-powered backend systems using LLMs, LangChain,
+        FastAPI, and scalable architectures — focused on real-world automation,
+        intelligent workflows, and production-ready solutions.
+      </p>
+
+      <!-- Buttons -->
       <div class="flex flex-wrap gap-4 pt-4">
-        <a
-          href="#project"
-          class="px-6 py-3 rounded-lg bg-yellow-500 text-gray-900 font-semibold hover:bg-yellow-600 transition"
-        >
-          View Builds
+        <a href="#project" class="btn-primary glow">
+          View Deployments
         </a>
 
-        <a
-          href="media/Sankalp_Kumar_resume.pdf"
-          download
-          class="px-6 py-3 rounded-lg border border-yellow-500/40 text-yellow-400 hover:bg-yellow-500/10 transition"
-        >
+        <a href="media/Sankalp_Kumar_resume.pdf"
+           download
+           class="px-6 py-3 rounded-lg border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/10 transition">
           Download Resume
         </a>
       </div>
+
     </div>
 
-    <!-- Right: Profile / Visual -->
-    <div class="flex justify-center md:justify-end">
-      <div class="relative">
-        <div class="absolute inset-0 rounded-full bg-yellow-500/20 blur-2xl"></div>
-        <img
-          src="assets/profile_pic.png"
-          alt="Sankalp Kumar"
-          class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border border-gray-800 shadow-xl"
-        />
+    <!-- RIGHT: AI PROFILE PANEL -->
+    <div class="flex justify-center md:justify-end animate-fade-slide delay-200">
+
+      <div class="relative glass p-6 glow">
+
+        <!-- Status -->
+        <div class="absolute top-4 right-4 text-xs text-green-400 font-mono">
+          ● ONLINE
+        </div>
+
+        <!-- Image -->
+        <div class="relative">
+          <div class="absolute inset-0 rounded-full bg-indigo-500/20 blur-2xl"></div>
+
+          <img
+            src="assets/profile_pic.png"
+            alt="Sankalp Kumar"
+            class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border border-white/10 shadow-xl"
+          />
+        </div>
+
+        <!-- System Info -->
+        <div class="mt-6 text-center space-y-2">
+          <p class="text-sm text-gray-400">SYSTEM NODE</p>
+          <p class="text-white font-semibold">Sankalp Kumar</p>
+          <p class="text-indigo-400 text-xs">AI / Backend Systems</p>
+        </div>
+
       </div>
+
     </div>
 
   </div>
-</section>
 
-    <section id="about" class="bg-gray-950 py-24 text-white">
+</section>
+    <section id="about" class="section">
+
   <div class="max-w-7xl mx-auto px-6">
 
-    <!-- Section Header -->
+    <!-- Header -->
     <div class="max-w-3xl mx-auto text-center mb-16">
-      <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
-        Profile
+      <span class="text-sm text-indigo-400 font-medium uppercase tracking-wide">
+        System Profile
       </span>
-      <h2 class="text-4xl font-bold mt-3">
-        Builder’s Overview
+
+      <h2 class="text-4xl font-bold mt-3 gradient-text">
+        Engineering Overview
       </h2>
+
       <p class="text-gray-400 mt-4 text-lg">
-        A brief look at how I think, build, and grow as an engineer.
+        How I build systems, solve problems, and grow as a developer.
       </p>
     </div>
 
-    <!-- Content Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-12 items-start">
 
-      <!-- Left: Narrative -->
+      <!-- LEFT -->
       <div class="space-y-6">
-        <p class="text-gray-300 leading-relaxed text-lg">
-          I am <span class="text-yellow-400 font-semibold">Sankalp Kumar</span>,
-          an MCA graduate focused on building reliable backend systems and
-          automation-driven applications. I work primarily with
-          <span class="font-semibold text-gray-200">Python, Django, REST APIs</span>,
-          and supporting technologies that enable scalability and maintainability.
+
+        <p class="text-gray-300 text-lg leading-relaxed">
+          I am <span class="text-indigo-400 font-semibold">Sankalp Kumar</span>,
+          an MCA graduate focused on building backend systems and now moving
+          towards <span class="text-white font-semibold">AI-powered applications</span>.
         </p>
 
-        <p class="text-gray-300 leading-relaxed text-lg">
-          My projects emphasize real-world problem solving—secure authentication,
-          background task processing, structured data handling, and clean system
-          design. I prefer clarity over complexity and focus on solutions that
-          are practical, testable, and extensible.
+        <p class="text-gray-300 text-lg leading-relaxed">
+          I work with <span class="text-white font-semibold">Python, Django, APIs</span>
+          and I am learning <span class="text-indigo-400 font-semibold">LangChain, LLMs, and AI systems</span>
+          to build smarter and more automated solutions.
         </p>
 
         <p class="text-gray-400 leading-relaxed">
-          Currently, I am deepening my expertise in backend architecture,
-          automation, and system-level thinking while preparing for professional
-          software engineering roles.
+          I focus on simple, clean, and practical solutions. My goal is to build
+          systems that are easy to use, scalable, and useful in real-world problems.
         </p>
-      </div>
-
-      <!-- Right: Capability Cards -->
-      <div class="grid grid-cols-1 gap-6">
-
-        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
-          <h3 class="text-lg font-semibold text-yellow-400 mb-2">
-            Core Engineering Focus
-          </h3>
-          <p class="text-gray-300">
-            Backend development, RESTful APIs, authentication systems,
-            background jobs, and data modeling.
-          </p>
-        </div>
-
-        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
-          <h3 class="text-lg font-semibold text-yellow-400 mb-2">
-            Notable Work
-          </h3>
-          <p class="text-gray-300">
-            Built production-grade projects such as <span class="font-medium">DocumentVault</span>
-            and <span class="font-medium">PDF Genie</span>, focusing on security,
-            automation, and user-centric workflows.
-          </p>
-        </div>
-
-        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6">
-          <h3 class="text-lg font-semibold text-yellow-400 mb-2">
-            Tools & Workflow
-          </h3>
-          <p class="text-gray-300">
-            Git, GitHub, Docker, Postman, VS Code, PostgreSQL, Redis,
-            and modern CSS frameworks.
-          </p>
-        </div>
 
       </div>
+
+      <!-- RIGHT CARDS -->
+      <div class="grid gap-6">
+
+        <!-- Card 1 -->
+        <div class="panel glow-hover">
+          <h3 class="text-lg font-semibold text-indigo-400 mb-2">
+            What I Build
+          </h3>
+          <p class="text-gray-300">
+            Backend systems, APIs, authentication, automation tools,
+            and now AI-based applications.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="panel glow-hover">
+          <h3 class="text-lg font-semibold text-indigo-400 mb-2">
+            Projects
+          </h3>
+          <p class="text-gray-300">
+            Built projects like <span class="font-medium">DocumentVault</span>
+            and <span class="font-medium">PDF Genie</span> with focus on
+            security, automation, and real-world use.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="panel glow-hover">
+          <h3 class="text-lg font-semibold text-indigo-400 mb-2">
+            Tools I Use
+          </h3>
+          <p class="text-gray-300">
+            Git, GitHub, Docker, PostgreSQL, Redis, Postman, VS Code
+            and modern web tools.
+          </p>
+        </div>
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 </main>
-  <section id="project" class="bg-gray-950 py-24 text-white">
+  <section id="projects" class="section">
+
   <div class="max-w-7xl mx-auto px-6">
 
-    <!-- Section Header -->
-    <div class="max-w-3xl mx-auto text-center mb-16">
-      <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
-        Campaigns
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <span class="text-sm text-indigo-400 uppercase tracking-wide">
+        Deployments
       </span>
-      <h2 class="text-4xl font-bold mt-3">
-        Selected Builds
+
+      <h2 class="text-4xl font-bold mt-3 gradient-text">
+        Real Systems I Built
       </h2>
+
       <p class="text-gray-400 mt-4 text-lg">
-        Real-world systems built with clear goals, structured execution,
-        and measurable outcomes.
+        Projects focused on backend systems, automation, and AI learning.
       </p>
     </div>
 
-    <!-- Projects Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-8">
 
-      <!-- DocumentVault -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
-        <img src="assets/DocumentVault.png" alt="DocumentVault" class="w-full h-56 object-cover" />
+      <!-- Project Card -->
+      <div class="panel glow-hover">
 
-        <div class="p-6 space-y-4">
-          <h3 class="text-2xl font-semibold text-yellow-400">DocumentVault</h3>
+        <img src="assets/DocumentVault.png"
+             class="rounded-lg mb-4 h-52 w-full object-cover" />
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Problem:</span>
-            Managing sensitive documents with expiry tracking and secure access
-            is error-prone and often unstructured.
-          </p>
+        <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+          DocumentVault
+        </h3>
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Strategy:</span>
-            Built a Django-based platform with OTP authentication, background
-            task processing, and automated expiry reminders.
-          </p>
+        <p class="text-gray-300 text-sm">
+          Secure document system with expiry tracking and automation.
+        </p>
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Result:</span>
-            A secure, scalable document lifecycle system with user-controlled
-            data access and automation.
-          </p>
+        <p class="text-xs text-gray-400 mt-2">
+          Django · PostgreSQL · Celery · Redis
+        </p>
 
-          <p class="text-sm text-gray-400">
-            <span class="font-semibold">Stack:</span>
-            Django · PostgreSQL · Celery · Redis · Tailwind CSS
-          </p>
+        <a href="https://document-vault-ghi6.onrender.com"
+           target="_blank"
+           class="inline-block mt-4 btn-primary">
+          Live Demo
+        </a>
 
-          <div class="pt-4">
-            <a
-              href="https://document-vault-ghi6.onrender.com"
-              target="_blank"
-              class="inline-block px-5 py-2 rounded-lg bg-yellow-500 text-gray-900 font-semibold hover:bg-yellow-600 transition"
-            >
-              View Live
-            </a>
-          </div>
-        </div>
       </div>
 
       <!-- PDF Genie -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
-        <img src="assets/Telegram_Bot.png" alt="PDF Genie" class="w-full h-56 object-cover" />
+      <div class="panel glow-hover">
 
-        <div class="p-6 space-y-4">
-          <h3 class="text-2xl font-semibold text-yellow-400">PDF Genie</h3>
+        <img src="assets/Telegram_Bot.png"
+             class="rounded-lg mb-4 h-52 w-full object-cover" />
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Problem:</span>
-            Users need quick PDF operations without installing heavy desktop tools.
-          </p>
+        <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+          PDF Genie
+        </h3>
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Strategy:</span>
-            Developed a Telegram bot that performs PDF operations via chat commands.
-          </p>
+        <p class="text-gray-300 text-sm">
+          Telegram bot for quick PDF tools and automation.
+        </p>
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Result:</span>
-            Lightweight PDF automation directly accessible within Telegram.
-          </p>
+        <p class="text-xs text-gray-400 mt-2">
+          Python · Telegram API
+        </p>
 
-          <p class="text-sm text-gray-400">
-            <span class="font-semibold">Stack:</span>
-            Python · SQLite · Telegram Bot API
-          </p>
+        <a href="https://t.me/PDFGeniebot"
+           target="_blank"
+           class="inline-block mt-4 btn-primary">
+          Use Bot
+        </a>
 
-          <div class="pt-4">
-            <a
-              href="https://t.me/PDFGeniebot"
-              target="_blank"
-              class="inline-block px-5 py-2 rounded-lg border border-yellow-500/40 text-yellow-400 hover:bg-yellow-500/10 transition"
-            >
-              Use Bot
-            </a>
-          </div>
-        </div>
       </div>
 
       <!-- WebScraper -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
-        <img src="assets/ws2.jpeg" alt="WebScraper" class="w-full h-56 object-cover" />
+      <div class="panel glow-hover">
 
-        <div class="p-6 space-y-4">
-          <h3 class="text-2xl font-semibold text-yellow-400">WebScraper</h3>
+        <img src="assets/ws2.jpeg"
+             class="rounded-lg mb-4 h-52 w-full object-cover" />
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Problem:</span>
-            Extracting structured data from websites is repetitive and manual.
-          </p>
+        <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+          WebScraper
+        </h3>
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Strategy:</span>
-            Built a Django app to scrape specific page elements based on user input.
-          </p>
+        <p class="text-gray-300 text-sm">
+          Tool to extract structured data from websites.
+        </p>
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Result:</span>
-            A reusable data extraction tool for research and analysis.
-          </p>
+        <p class="text-xs text-gray-400 mt-2">
+          Django · Python
+        </p>
 
-          <p class="text-sm text-gray-400">
-            <span class="font-semibold">Stack:</span>
-            Django · Python · HTML · Bootstrap
-          </p>
+        <a href="https://web-scrapping-4flz.onrender.com/"
+           target="_blank"
+           class="inline-block mt-4 btn-primary">
+          View
+        </a>
 
-          <div class="pt-4">
-            <a
-              href="https://web-scrapping-4flz.onrender.com/"
-              target="_blank"
-              class="inline-block px-5 py-2 rounded-lg border border-yellow-500/40 text-yellow-400 hover:bg-yellow-500/10 transition"
-            >
-              View Live
-            </a>
-          </div>
-        </div>
       </div>
 
       <!-- Campus Connect -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
-        <img src="assets/campus_connect.jpg" alt="Campus Connect" class="w-full h-56 object-cover" />
+      <div class="panel glow-hover">
 
-        <div class="p-6 space-y-4">
-          <div class="flex items-center gap-3">
-            <h3 class="text-2xl font-semibold text-yellow-400">Campus Connect</h3>
-            <span class="text-xs px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/30">
-              Currently Working
-            </span>
-          </div>
+        <img src="assets/campus_connect.jpg"
+             class="rounded-lg mb-4 h-52 w-full object-cover" />
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Problem:</span>
-            Manual campus event handling leads to poor coordination and duplication.
-          </p>
+        <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+          Campus Connect
+        </h3>
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Strategy:</span>
-            Building a role-based event platform with REST APIs, QR ticketing,
-            and duplicate entry prevention.
-          </p>
+        <p class="text-gray-300 text-sm">
+          Event system with roles, QR tickets, and automation.
+        </p>
 
-          <p class="text-gray-300">
-            <span class="font-semibold text-gray-200">Current Progress:</span>
-            Core backend, authentication, roles, and workflows implemented.
-            Advanced features are in active development.
-          </p>
+        <p class="text-xs text-gray-400 mt-2">
+          Django · DRF · PostgreSQL
+        </p>
 
-          <p class="text-sm text-gray-400">
-            <span class="font-semibold">Stack:</span>
-            Django · DRF · PostgreSQL · QR Code · Bootstrap
-          </p>
+        <span class="text-xs text-green-400">● In Progress</span>
 
-          <div class="pt-4">
-            <a
-              href="#contact"
-              class="inline-block px-5 py-2 rounded-lg border border-yellow-500/40 text-yellow-400 hover:bg-yellow-500/10 transition"
-            >
-              Request Demo
-            </a>
-          </div>
-        </div>
       </div>
 
     </div>
 
-    <!-- Explore All Builds -->
-    <div class="mt-12 text-center">
-      <a
-        href="https://github.com/sankalpkumar111/"
-        target="_blank"
-        class="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-yellow-500/40 text-yellow-400 font-semibold hover:bg-yellow-500/10 transition"
-      >
-        Explore All Builds
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </svg>
+    <!-- GitHub -->
+    <div class="text-center mt-12">
+      <a href="https://github.com/sankalpkumar111/"
+         target="_blank"
+         class="btn-primary">
+        View All Projects
       </a>
     </div>
 
   </div>
 </section>
-<section id="skills" class="bg-gray-950 py-24 text-white">
+<section id="skills" class="section">
+
   <div class="max-w-7xl mx-auto px-6">
 
-    <!-- Section Header -->
-    <div class="max-w-3xl mx-auto text-center mb-16">
-      <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <span class="text-sm text-indigo-400 uppercase tracking-wide">
         Capabilities
       </span>
-      <h2 class="text-4xl font-bold mt-3">
-        Core Structures
+
+      <h2 class="text-4xl font-bold mt-3 gradient-text">
+        What I Work With
       </h2>
+
       <p class="text-gray-400 mt-4 text-lg">
-        The foundational components I use to design, build, and scale
-        real-world software systems.
+        Tools and technologies I use to build backend and AI systems.
       </p>
     </div>
 
-    <!-- Structures Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <!-- GRID -->
+    <div class="grid md:grid-cols-3 gap-8">
 
-      <!-- Backend Core -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
-        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
-          Backend Core
+      <!-- BIG MAIN BLOCK -->
+      <div class="md:col-span-2 panel glow-hover p-8">
+
+        <h3 class="text-2xl font-semibold text-indigo-400 mb-4">
+          Backend & API Systems
         </h3>
+
         <p class="text-gray-300 mb-4">
-          Design and implementation of scalable backend logic, authentication
-          systems, and RESTful APIs.
+          Building APIs, authentication systems, and scalable backend logic.
         </p>
+
         <p class="text-gray-400 text-sm">
-          <span class="font-semibold">Technologies:</span>
-          Python · Django · Django REST Framework · FastAPI
+          Python · Django · DRF · FastAPI
         </p>
+
       </div>
 
-      <!-- Data & Storage -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
-        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
-          Data & Storage
+      <!-- AI BLOCK -->
+      <div class="panel glow-hover p-6">
+
+        <h3 class="text-lg font-semibold text-indigo-400 mb-2">
+          AI & Learning
         </h3>
-        <p class="text-gray-300 mb-4">
-          Structured data modeling, relational databases, and persistence
-          strategies for reliable systems.
+
+        <p class="text-gray-300 text-sm">
+          Learning LangChain, LLMs, and AI-based applications.
         </p>
-        <p class="text-gray-400 text-sm">
-          <span class="font-semibold">Technologies:</span>
-          PostgreSQL · SQLite · MySQL
-        </p>
+
       </div>
 
-      <!-- Automation & Background Processing -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
-        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
-          Automation & Background Tasks
+      <!-- DATA -->
+      <div class="panel glow-hover p-6">
+
+        <h3 class="text-lg font-semibold text-indigo-400 mb-2">
+          Databases
         </h3>
-        <p class="text-gray-300 mb-4">
-          Asynchronous processing, scheduled jobs, and workflow automation
-          for scalable applications.
+
+        <p class="text-gray-300 text-sm">
+          PostgreSQL · MySQL · SQLite
         </p>
-        <p class="text-gray-400 text-sm">
-          <span class="font-semibold">Technologies:</span>
-          Celery · Redis · Telegram Bot API
-        </p>
+
       </div>
 
-      <!-- Frontend & Interface Layer -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
-        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
-          Frontend & Interface Layer
+      <!-- AUTOMATION -->
+      <div class="panel glow-hover p-6">
+
+        <h3 class="text-lg font-semibold text-indigo-400 mb-2">
+          Automation
         </h3>
-        <p class="text-gray-300 mb-4">
-          Clean, responsive interfaces that integrate seamlessly with backend
-          systems.
+
+        <p class="text-gray-300 text-sm">
+          Celery · Redis · Background Jobs
         </p>
-        <p class="text-gray-400 text-sm">
-          <span class="font-semibold">Technologies:</span>
-          HTML · CSS · JavaScript · Tailwind CSS · Bootstrap 
-        </p>
+
       </div>
 
- <!-- Exploratory Experience -->
-<div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
-  <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
-    Upcoming Learning Goals
-  </h3>
-  <p class="text-gray-300 mb-4">
-    Planning to explore cross-platform development tools to expand skill set
-    toward mobile application development and system integration.
-  </p>
-  <p class="text-gray-400 text-sm">
-    <span class="font-semibold">Future Stack:</span>
-    Flutter · FlutterFlow
-  </p>
-</div>
+      <!-- FRONTEND -->
+      <div class="panel glow-hover p-6">
 
-
-      <!-- Tools & Workflow -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl p-8 transition">
-        <h3 class="text-2xl font-semibold text-yellow-400 mb-4">
-          Tools & Engineering Workflow
+        <h3 class="text-lg font-semibold text-indigo-400 mb-2">
+          Frontend
         </h3>
-        <p class="text-gray-300 mb-4">
-          Version control, API testing, containerization, and collaborative
-          development practices.
+
+        <p class="text-gray-300 text-sm">
+          HTML · CSS · JS · Tailwind
         </p>
-        <p class="text-gray-400 text-sm">
-          <span class="font-semibold">Tools:</span>
-          Git · GitHub · Docker · Postman · VS Code · Figma
+
+      </div>
+
+      <!-- TOOLS -->
+      <div class="panel glow-hover p-6">
+
+        <h3 class="text-lg font-semibold text-indigo-400 mb-2">
+          Tools
+        </h3>
+
+        <p class="text-gray-300 text-sm">
+          Git · Docker · Postman · VS Code
         </p>
+
+      </div>
+
+      <!-- FUTURE -->
+      <div class="panel glow-hover p-6">
+
+        <h3 class="text-lg font-semibold text-indigo-400 mb-2">
+          Next Learning
+        </h3>
+
+        <p class="text-gray-300 text-sm">
+          Flutter · AI Advanced Systems
+        </p>
+
       </div>
 
     </div>
+
   </div>
-</section>
+</section>  
+<section class="section">
 
-    <section class="bg-gray-950 py-24 px-6 text-white">
-  <div class="max-w-7xl mx-auto">
+  <div class="max-w-7xl mx-auto px-6">
 
-    <!-- Section Header -->
-    <div class="max-w-3xl mx-auto text-center mb-16">
-      <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
-        Knowledge Sharing
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <span class="text-sm text-indigo-400 uppercase tracking-wide">
+        Learning & Insights
       </span>
-      <h2 class="text-4xl font-bold mt-3">
-        Technical Notes & Insights
+
+      <h2 class="text-4xl font-bold mt-3 gradient-text">
+        What I Learn & Share
       </h2>
+
       <p class="text-gray-400 mt-4 text-lg">
-        Practical observations, tools, and workflows explored while building
-        and maintaining real-world software systems.
+        Notes and insights from tools, backend systems, and my AI learning journey.
       </p>
     </div>
 
-    <!-- Articles Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Article 1 -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
-        <div
-          class="h-56 bg-cover bg-center"
-          style="background-image: url('assets/uv_python.jpeg')"
-        ></div>
+      <!-- Card -->
+      <div class="panel glow-hover overflow-hidden">
 
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl font-semibold text-white">
-            uv: A High-Performance Python Project Tool
-          </h3>
+        <img src="assets/uv_python.jpeg"
+             class="h-48 w-full object-cover rounded-md mb-4" />
 
-          <p class="text-gray-400">
-            An overview of <strong>uv</strong>, a Rust-based Python project and
-            dependency manager focused on speed, simplicity, and modern
-            workflows.
-          </p>
+        <h3 class="text-lg font-semibold text-white mb-2">
+          Fast Python Tool (uv)
+        </h3>
 
-          <a
-            href="https://www.linkedin.com/posts/sankalp-kumar-986b12218_projects-activity-7319215676395560962-CM9f"
-            target="_blank"
-            class="inline-block text-yellow-400 font-medium hover:underline transition"
-          >
-            Read Insight →
-          </a>
-        </div>
+        <p class="text-gray-400 text-sm">
+          A fast tool for managing Python projects and dependencies.
+        </p>
+
+        <a href="https://www.linkedin.com/posts/sankalp-kumar-986b12218_projects-activity-7319215676395560962-CM9f"
+           target="_blank"
+           class="text-indigo-400 text-sm mt-3 inline-block">
+          Read →
+        </a>
+
       </div>
 
-      <!-- Article 2 -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
-        <div
-          class="h-56 bg-cover bg-center"
-          style="background-image: url('assets/post1.jpeg')"
-        ></div>
+      <!-- Card -->
+      <div class="panel glow-hover overflow-hidden">
 
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl font-semibold text-white">
-            Git Commands That Improve Daily Workflow
-          </h3>
+        <img src="assets/post1.jpeg"
+             class="h-48 w-full object-cover rounded-md mb-4" />
 
-          <p class="text-gray-400">
-            A curated set of Git commands that simplify collaboration,
-            debugging, and version control in real development environments.
-          </p>
+        <h3 class="text-lg font-semibold text-white mb-2">
+          Useful Git Commands
+        </h3>
 
-          <a
-            href="https://www.linkedin.com/posts/sankalp-kumar-986b12218_git-versioncontrol-softwaredevelopment-activity-7257387292741263360-3ADY"
-            target="_blank"
-            class="inline-block text-yellow-400 font-medium hover:underline transition"
-          >
-            Read Insight →
-          </a>
-        </div>
+        <p class="text-gray-400 text-sm">
+          Simple Git commands that improve daily workflow.
+        </p>
+
+        <a href="https://www.linkedin.com/posts/sankalp-kumar-986b12218_git-versioncontrol-softwaredevelopment-activity-7257387292741263360-3ADY"
+           target="_blank"
+           class="text-indigo-400 text-sm mt-3 inline-block">
+          Read →
+        </a>
+
       </div>
 
-      <!-- Article 3 -->
-      <div class="bg-gray-900 border border-gray-800 hover:border-yellow-500/40 rounded-xl overflow-hidden transition">
-        <img
-          src="assets/QA_ToolBox.jpg"
-          alt="QA Toolbox"
-          class="w-full h-56 object-cover"
-        />
+      <!-- Card -->
+      <div class="panel glow-hover overflow-hidden">
 
-        <div class="p-6 space-y-4">
-          <h3 class="text-xl font-semibold text-white">
-            QA Toolbox: Essential Tools for Reliable Software
-          </h3>
+        <img src="assets/QA_ToolBox.jpg"
+             class="h-48 w-full object-cover rounded-md mb-4" />
 
-          <p class="text-gray-400">
-            A structured collection of testing tools covering automation,
-            API testing, performance analysis, and DevOps integration.
-          </p>
+        <h3 class="text-lg font-semibold text-white mb-2">
+          Testing Tools Guide
+        </h3>
 
-          <a
-            href="https://www.linkedin.com/posts/sankalp-kumar-986b12218_qa-softwaretesting-automation-activity-7306909595388506112-uYhy"
-            target="_blank"
-            class="inline-block text-yellow-400 font-medium hover:underline transition"
-          >
-            Read Insight →
-          </a>
-        </div>
+        <p class="text-gray-400 text-sm">
+          Tools for testing, APIs, and improving software quality.
+        </p>
+
+        <a href="https://www.linkedin.com/posts/sankalp-kumar-986b12218_qa-softwaretesting-automation-activity-7306909595388506112-uYhy"
+           target="_blank"
+           class="text-indigo-400 text-sm mt-3 inline-block">
+          Read →
+        </a>
+
       </div>
 
     </div>
 
-    <!-- View All -->
+    <!-- Button -->
     <div class="text-center mt-12">
-      <a
-        href="https://www.linkedin.com/in/sankalp-kumar-986b12218/"
-        target="_blank"
-        class="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-yellow-500/40 text-yellow-400 font-semibold hover:bg-yellow-500/10 transition"
-      >
-        View All Technical Notes
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </svg>
+      <a href="https://www.linkedin.com/in/sankalp-kumar-986b12218/"
+         target="_blank"
+         class="btn-primary">
+        View All Posts
       </a>
     </div>
 
   </div>
+
 </section>
+<section id="contact" class="section">
 
-<section id="contact" class="bg-gray-950 py-24 text-white">
-  <div class="max-w-5xl mx-auto px-6 text-center">
+  <div class="max-w-4xl mx-auto px-6 text-center">
 
-    <!-- Section Header -->
-    <span class="text-sm text-yellow-400 font-medium uppercase tracking-wide">
-      Get in Touch
+    <!-- Header -->
+    <span class="text-sm text-indigo-400 uppercase tracking-wide">
+      Contact
     </span>
 
-    <h2 class="text-4xl font-bold mt-3 mb-6">
-      Let’s Discuss a Real Problem
+    <h2 class="text-4xl font-bold mt-3 gradient-text">
+      Let’s Work Together
     </h2>
 
-    <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-10">
-      If you’re looking for someone who can design reliable backend systems,
-      build clean APIs, or collaborate on a meaningful software project,
-      I’d be glad to connect. I value clear requirements, thoughtful design,
-      and practical execution.
+    <p class="text-gray-400 mt-4 text-lg">
+      If you want to build backend or AI-based systems, feel free to reach out.
     </p>
 
-    <!-- CTA Buttons -->
-    <div class="flex flex-col sm:flex-row justify-center gap-4">
-      <a
-        href="mailto:sankalpkumar911@gmail.com"
-        class="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-yellow-500 text-gray-900 font-semibold hover:bg-yellow-600 transition"
-      >
-        Start a Conversation
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+
+      <a href="mailto:sankalpkumar911@gmail.com"
+         class="btn-primary glow">
+        Send Email
       </a>
 
-      <a
-        href="https://github.com/sankalpkumar111"
-        target="_blank"
-        class="inline-flex items-center justify-center px-8 py-3 rounded-lg border border-yellow-500/40 text-yellow-400 font-semibold hover:bg-yellow-500/10 transition"
-      >
-        View GitHub
+      <a href="https://github.com/sankalpkumar111"
+         target="_blank"
+         class="px-6 py-3 rounded-lg border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/10 transition">
+        GitHub
       </a>
+
     </div>
 
   </div>
+
 </section>
-    
-      <footer class="bg-gray-950 py-16 text-white">
-  <div class="max-w-6xl mx-auto px-6 text-center">
+   <footer class="py-16 text-center">
 
-    <!-- Closing Statement -->
-    <p class="text-lg text-gray-300 mb-10 max-w-3xl mx-auto">
-      I approach software with curiosity, discipline, and a focus on building
-      systems that are reliable, maintainable, and purpose-driven.
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Line -->
+    <p class="text-gray-400 mb-8">
+      Building backend & AI systems with clean and practical solutions.
     </p>
 
-    <!-- Social Links -->
-    <div class="flex justify-center gap-8 mb-10">
+    <!-- Social -->
+    <div class="flex justify-center gap-6 mb-8 text-gray-400">
 
-      <!-- GitHub -->
-      <a
-        href="https://github.com/sankalpkumar111"
-        target="_blank"
-        class="text-gray-400 hover:text-yellow-400 transition"
-        aria-label="GitHub"
-      >
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.727-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.084-.729.084-.729 1.205.084 1.838 1.234 1.838 1.234 1.07 1.834 2.809 1.303 3.495.997.108-.776.418-1.303.76-1.603-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.221-.123-.304-.535-1.527.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 016.005 0c2.292-1.552 3.3-1.23 3.3-1.23.653 1.649.241 2.872.118 3.176.77.841 1.234 1.911 1.234 3.221 0 4.61-2.805 5.625-5.475 5.921.43.372.823 1.1.823 2.219v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.593 24 12.297c0-6.627-5.373-12-12-12"/>
-        </svg>
-      </a>
-
-      <!-- LinkedIn -->
-      <a
-        href="https://www.linkedin.com/in/sankalp-kumar-986b12218/"
-        target="_blank"
-        class="text-gray-400 hover:text-yellow-400 transition"
-        aria-label="LinkedIn"
-      >
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.75 19.625h-3.5v-11.25h3.5v11.25zm-1.75-12.75c-1.122 0-2.031-.909-2.031-2.031s.909-2.031 2.031-2.031 2.031.909 2.031 2.031-.909 2.031-2.031 2.031zm13.75 12.75h-3.5v-5.5c0-1.331-.024-3.043-1.855-3.043-1.856 0-2.141 1.448-2.141 2.945v5.598h-3.5v-11.25h3.363v1.536h.048c.468-.884 1.607-1.814 3.309-1.814 3.54 0 4.188 2.33 4.188 5.362v6.166z"/>
-        </svg>
-      </a>
-
-      <!-- X -->
-      <a
-        href="https://x.com/sankalpkumar111"
-        target="_blank"
-        class="text-gray-400 hover:text-yellow-400 transition"
-        aria-label="X"
-      >
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M22.46 6c-.77.35-1.6.59-2.46.69a4.28 4.28 0 001.88-2.36 8.56 8.56 0 01-2.7 1.03A4.26 4.26 0 0016.2 4c-2.37 0-4.29 1.92-4.29 4.28 0 .34.04.68.1 1A12.11 12.11 0 013 5.29a4.28 4.28 0 001.33 5.71 4.22 4.22 0 01-1.94-.54v.06c0 2.02 1.44 3.7 3.34 4.08-.35.1-.73.15-1.12.15-.27 0-.53-.02-.78-.08a4.29 4.29 0 004 2.96A8.55 8.55 0 012 18.58a12.09 12.09 0 006.56 1.93c7.88 0 12.2-6.53 12.2-12.2v-.56a8.7 8.7 0 002.15-2.23z"/>
-        </svg>
-      </a>
-
-      <!-- Instagram -->
-      <a
-        href="https://www.instagram.com/sankalp._kr/"
-        target="_blank"
-        class="text-gray-400 hover:text-yellow-400 transition"
-        aria-label="Instagram"
-      >
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2.2c3.2 0 3.584.012 4.847.07 1.259.058 2.11.275 2.601.482.6.242 1.032.531 1.486.985.454.454.743.886.985 1.486.207.49.424 1.341.482 2.601.058 1.263.07 1.646.07 4.847s-.012 3.584-.07 4.847c-.058 1.259-.275 2.11-.482 2.601-.242.6-.531 1.032-.985 1.486-.454.454-.886.743-1.486.985-.49.207-1.341.424-2.601.482-1.263.058-1.646.07-4.847.07s-3.584-.012-4.847-.07c-1.259-.058-2.11-.275-2.601-.482-.6-.242-1.032-.531-1.486-.985-.454-.454-.743-.886-.985-1.486-.207-.49-.424-1.341-.482-2.601C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.847c.058-1.259.275-2.11.482-2.601.242-.6.531-1.032.985-1.486.454-.454.886-.743 1.486-.985.49-.207 1.341-.424 2.601-.482 1.263-.058 1.646-.07 4.847-.07z"/>
-        </svg>
-      </a>
-
-      <!-- Email -->
-      <a
-        href="mailto:sankalpkumar911@gmail.com"
-        class="text-gray-400 hover:text-yellow-400 transition"
-        aria-label="Email"
-      >
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 12.713l11.976-8.392A1.003 1.003 0 0023.976 3H.023a1.003 1.003 0 00-.048 1.321l11.976 8.392c.427.299 1.051.299 1.478 0zM12 14l-11.975-8.392v10.55c0 .597.452 1.036 1.022 1.036h21.902c.57 0 1.021-.439 1.021-1.036V5.608L12 14z"/>
-        </svg>
-      </a>
+      <a href="https://github.com/sankalpkumar111" target="_blank" class="hover:text-indigo-400">GitHub</a>
+      <a href="https://www.linkedin.com/in/sankalp-kumar-986b12218/" target="_blank" class="hover:text-indigo-400">LinkedIn</a>
+      <a href="mailto:sankalpkumar911@gmail.com" class="hover:text-indigo-400">Email</a>
 
     </div>
 
-    <!-- Copyright -->
+    <!-- Copy -->
     <p class="text-sm text-gray-500">
-      © 2025 Sankalp Kumar. All rights reserved.
+      © 2026 Sankalp Kumar
     </p>
 
   </div>
-</footer>
-  </body>
+
+</footer>  </body>
 </html>

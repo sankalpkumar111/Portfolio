@@ -2,80 +2,155 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes scrolldown {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(10px); /* Move down */
-    }
-    100% {
-      transform: translateY(0); /* Return to original position */
-    }
-  }
-  
-  .hover\:animate-Scrolldown:hover {
-    animation: scrolldown 0.5s ease-in-out;
-  }
-  
-
-/* Base styles */
+/* =========================
+   GLOBAL BASE STYLES
+========================= */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  background: #020617;
+  color: #E2E8F0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
+/* =========================
+   GRID BACKGROUND (AI FEEL)
+========================= */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(99,102,241,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99,102,241,0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: -1;
 }
 
-/* Gradient background for sections */
-.bg-gradient-to-r {
-    background: linear-gradient(to right, #1a202c, #2d3748);
+/* =========================
+   GLASS COMPONENT
+========================= */
+.glass {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 16px;
 }
 
-/* Fading and sliding animation */
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* =========================
+   NEON GLOW EFFECTS
+========================= */
+.glow {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.5);
+  transition: 0.3s ease;
+}
+
+/* =========================
+   GRADIENT TEXT (AI LOOK)
+========================= */
+.gradient-text {
+  background: linear-gradient(90deg, #6366F1, #22D3EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   BUTTON SYSTEM
+========================= */
+.btn-primary {
+  background: linear-gradient(90deg, #6366F1, #22D3EE);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 20px rgba(99,102,241,0.4);
+}
+
+/* =========================
+   TERMINAL TEXT EFFECT
+========================= */
+.terminal {
+  font-family: 'JetBrains Mono', monospace;
+  color: #22D3EE;
+}
+
+/* =========================
+   SCROLL DOWN ANIMATION
+========================= */
+@keyframes scrolldown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+.hover\:animate-Scrolldown:hover {
+  animation: scrolldown 0.6s ease-in-out;
+}
+
+/* =========================
+   FADE + SLIDE ANIMATION
+========================= */
 @keyframes fadeSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Class to trigger animation */
 .animate-fade-slide {
-    animation: fadeSlideIn 0.7s ease forwards;
+  animation: fadeSlideIn 0.8s ease forwards;
 }
 
-/* Styling for buttons */
-button, a {
-    transition: background-color 0.3s, transform 0.3s;
+/* =========================
+   STAGGER DELAYS
+========================= */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* =========================
+   HOVER INTERACTION SYSTEM
+========================= */
+a, button {
+  transition: all 0.25s ease;
 }
 
-button:hover, a:hover {
-    transform: scale(1.05);
+a:hover, button:hover {
+  transform: translateY(-2px);
 }
 
-/* Footer styles */
-footer {
-    background-color: #2d3748;
+/* =========================
+   PANEL COMPONENT (REUSABLE)
+========================= */
+.panel {
+  @apply glass p-6;
 }
 
-.animate-fade-slide-in {
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  .delay-100 {
-    transition-delay: 0.1s;
-  }
-  .delay-200 {
-    transition-delay: 0.2s;
-  }
-  .delay-300 {
-    transition-delay: 0.3s;
-  }
+/* =========================
+   SECTION SPACING
+========================= */
+.section {
+  padding: 100px 0;
+}
